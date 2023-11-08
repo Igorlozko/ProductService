@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(name ="Product-service", url ="http/localhost:8080")
 public interface ProductClient {
     @PostMapping("/product")
-    TodoProduct postData();
+    ProductDetails addProduct(@RequestBody ProductDetails productDetails);
 }

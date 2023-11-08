@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TodoProduct {
+public class ProductDetails {
     @JsonProperty ("productId")
     private int productId;
     @JsonProperty ("productName")

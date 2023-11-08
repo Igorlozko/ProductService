@@ -25,7 +25,7 @@ public class ProductController {
                 return response;
 
     }
-    @PostMapping("/products-id")
+    @GetMapping("/products-id")
     public String getProductById()throws Exception, InterruptedException{
         List<CompletableFuture<ProductDetails>>future = new ArrayList<>();
         CompletableFuture.supplyAsync(()->productService addData());
